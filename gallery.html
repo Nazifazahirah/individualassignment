@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Gallery – Nazifa</title>
+  <meta charset="UTF-8" />
+  <!-- Font: Josefin Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f2fdf3;
+      font-family: 'Segoe UI', sans-serif;
+      color: #1b3c2e;
+      margin: 0;
+    }
+
+    .header {
+      background-color: #3fa173;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      position: relative;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .home-link {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      background-color: #1b3c2e;
+      padding: 6px 12px;
+      border-radius: 5px;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    nav {
+      background-color: #cfeadc;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 0 15px;
+      color: #1b3c2e;
+      font-weight: bold;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #2e6b4e;
+    }
+
+    .gallery {
+      max-width: 1000px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      justify-items: center;
+    }
+
+    .circle {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .circle:hover img {
+      transform: scale(1.1);
+    }
+
+    .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(27, 60, 46, 0.5);
+      color: white;
+      text-align: center;
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-weight: bold;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .circle:hover .overlay-text {
+      opacity: 1;
+    }
+
+    .footer {
+      background-color: #1b3c2e;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9em;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <a href="index.html" class="home-link">Home</a>
+  <h1>My Gallery</h1>
+</div>
+
+<nav>
+  <a href="personal-info.html">Personal Information</a>
+  <a href="education.html">My Education</a>
+  <a href="hobby.html">My Hobby</a>
+  <a href="skills.html">My Skills</a>
+  <a href="gallery.html">My Gallery</a>
+  <a href="contact.html">Contact Me</a>
+</nav>
+
+<div class="gallery">
+  <div class="circle">
+    <img src="images/gallery1.jpg" alt="Gallery 1">
+    <div class="overlay-text">With My Besties</div>
+  </div>
+
+  <div class="circle">
+    <img src="images/gallery2.jpg" alt="Gallery 2">
+    <div class="overlay-text">Campus Life</div>
+  </div>
+
+  <div class="circle">
+    <img src="images/gallery3.jpg" alt="Gallery 3">
+    <div class="overlay-text">Nature Walks</div>
+  </div>
+
+  <div class="circle">
+    <img src="images/gallery4.jpg" alt="Gallery 4">
+    <div class="overlay-text">Green Café</div>
+  </div>
+
+  <div class="circle">
+    <img src="images/gallery5.jpg" alt="Gallery 5">
+    <div class="overlay-text">Coding Time</div>
+  </div>
+
+  <div class="circle">
+    <img src="images/gallery6.jpg" alt="Gallery 6">
+    <div class="overlay-text">Evening Walk</div>
+  </div>
+</div>
+
+<div class="footer">
+  &copy; 2025 Nazifa 📸
+</div>
+
+</body>
+</html>

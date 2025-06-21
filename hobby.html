@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Hobby – Nazifa</title>
+  <meta charset="UTF-8" />
+  <!-- Font: Josefin Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f2fdf3;
+      font-family: 'Segoe UI', sans-serif;
+      color: #1b3c2e;
+      margin: 0;
+    }
+
+    .header {
+      background-color: #3fa173;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      position: relative;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .home-link {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      background-color: #1b3c2e;
+      padding: 6px 12px;
+      border-radius: 5px;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    nav {
+      background-color: #cfeadc;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 0 15px;
+      color: #1b3c2e;
+      font-weight: bold;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #2e6b4e;
+    }
+
+    .hobby-section {
+      width: 90%;
+      max-width: 1000px;
+      margin: 40px auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      width: 200px;
+      height: 200px;
+      perspective: 1000px;
+    }
+
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+
+    .card:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-front, .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border: 2px solid #3fa173;
+      box-shadow: 2px 2px 5px #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card-front {
+      background-color: #e1f4e3;
+      font-weight: bold;
+    }
+
+    .card-back {
+      background-color: #fff;
+      transform: rotateY(180deg);
+    }
+
+    .card-back img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .footer {
+      background-color: #1b3c2e;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9em;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <a href="index.html" class="home-link">Home</a>
+  <h1>My Hobbies</h1>
+</div>
+
+<nav>
+  <a href="personalinfo.html">Personal Information</a>
+  <a href="education.html">My Education</a>
+  <a href="hobby.html">My Hobby</a>
+  <a href="myskills.html">My Skills</a>
+  <a href="gallery.html">My Gallery</a>
+  <a href="contact.html">Contact Me</a>
+</nav>
+
+<div class="hobby-section">
+  <!-- Card 1 -->
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">Reading</div>
+      <div class="card-back"><img src="images/reading.jpg" alt="Reading hobby"></div>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">Playing Video Game</div>
+      <div class="card-back"><img src="images/videogame.jpg" alt="Gaming hobby"></div>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">Listening to Music</div>
+      <div class="card-back"><img src="images/music.jpg" alt="Music hobby"></div>
+    </div>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">Cycling</div>
+      <div class="card-back"><img src="images/cycling.jpg" alt="Cycling hobby"></div>
+    </div>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">Watching Movies</div>
+      <div class="card-back"><img src="images/movies.jpg" alt="Movie hobby"></div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  &copy; 2025 Nazifa 📚
+</div>
+
+</body>
+</html>
